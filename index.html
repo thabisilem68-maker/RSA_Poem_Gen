@@ -8,6 +8,7 @@
   </head>
   <body>
     <header>
+        <div class = "container">
       <h1>Welcome to the AI RSA Peom generator</h1>
     </header>
     <main>
@@ -17,11 +18,11 @@
           placeholder="Enter the type of RSA poem"
           autofocus
           required
-          autocomplete="off"
+          autocomplete="off"; class = "instruction"
         />
-        <input type="Submit" />
+        <input type="Submit" class ="submit_button" />
       </form>
-      <div>
+      <div class = "poem">
         Christian gentlemen a few
         <br />
         From Berwick unto Dover;
@@ -43,6 +44,7 @@
         open-sourced on Github</a
       >
     </footer>
+    </div>
     and is <a href="https://rsapoem.netlify.app/"> Hosted on Netlify. </a>
 
     <script src="src/index.js"></script>
