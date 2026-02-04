@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI RSA Poem Generator</title>
   </head>
@@ -13,19 +15,22 @@
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the type of RSA poem"
-            autofocus
-            required
-            autocomplete="off"
-            ;
-            class="instruction"
-          />
-          <input type="Submit" class="submit_button" />
-        </form>
-        <div class="poem">Christian gentlemen a few;</div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              autofocus
+              required
+              placeholder="Enter the topic of the poem"
+              autocomplete="off"
+              ;
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="Submit" class="submit_button" />
+          </form>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
